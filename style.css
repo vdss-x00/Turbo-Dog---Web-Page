@@ -1,0 +1,19 @@
+
+
+.container{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: repeat(12, 80px);
+    gap: 20px;
+    pointer-events: none;
+    z-index: 9999;
+    margin-left: 72px;
+    margin-right: 72px;
+}
+
+
+
+.coluna{
+    background-color: rgb(202, 47, 47);
+    opacity: 25%;
+}

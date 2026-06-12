@@ -1,0 +1,1 @@
+Esse arquivo tá aqui para a pasta não ser ignorada pelo git. Quando for colocar as imagens, pode deletar esse arquivo.
