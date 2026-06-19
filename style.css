@@ -29,7 +29,7 @@ main{
     position: absolute;
     display: grid;
     height: 100vh;
-    grid-template-columns: repeat(12, 80px);
+    grid-template-columns: repeat(16, 55px);
     gap: 20px;
     pointer-events: none;
     z-index: -999;
