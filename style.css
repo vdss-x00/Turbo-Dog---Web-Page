@@ -1,9 +1,9 @@
 :root{
-    --bg-claro: #f2f2f2;
+    --bg-claro: #fffa96;
     --texto-nav-claro: #36454F;
     --texto-corpo-claro: #151A1E;
     --texto-titulo-claro: #121212;
-    --bg-escuro: #2E2E2E;
+    --bg-escuro: #1E1B15;
     --texto-nav-escuro: #CCCCCC;
     --texto-corpo-escuro: #F0F0F0;
     --texto-titulo-escuro: #FAFAFA;
@@ -17,6 +17,12 @@
 body{
     background-color: var(--bg-claro);
     font-family: Arial, Helvetica, sans-serif;
+}
+
+main{
+    border: 1px solid fuchsia;
+    margin-left: 72px;
+    margin-right: 82px;
 }
 
 .container{
@@ -36,8 +42,6 @@ body{
     opacity: 25%;
 }
 .cabecalho{
-    margin-left: 72px;
-    margin-right: 82px;
     display: flex;
     justify-content: space-between;
     align-items: center;
