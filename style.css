@@ -16,11 +16,13 @@
 
 body{
     background-color: var(--bg-claro);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 main{
-    border: 1px solid fuchsia;
     margin-left: 72px;
     margin-right: 82px;
 }
@@ -28,11 +30,10 @@ main{
 .container{
     position: absolute;
     display: grid;
-    height: 100vh;
-    grid-template-columns: repeat(16, 55px);
+    height: 1320px;
+    grid-template-columns: repeat(16, 56px);
     gap: 20px;
     pointer-events: none;
-    z-index: -999;
     margin-left: 72px;
     margin-right: 72px;
 }
@@ -41,18 +42,22 @@ main{
     background-color: rgb(202, 47, 47);
     opacity: 25%;
 }
+
 .cabecalho{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 1px solid black;
+    position: fixed;
+    top: 0;
+    width: 1196px;
+    border-bottom: 15px solid var(--detalhe-vermelho-2);
+    background-color: var(--bg-claro);
 }
 
 nav{
-    border: 1px solid blue;
     display: flex;
     justify-content: space-around;
-    margin-right: 250px;
+    margin-right: 20px;
 }
 
 nav a{
@@ -63,16 +68,62 @@ nav a{
 }
 
 nav a:nth-child(1){
-    margin-left: 0;
-    padding: 0 30px 0 0;
+    grid-column: 6 / 8;
+}
+nav a:nth-child(2){
+    padding: 0 60px 0 60px;
+    grid-column: 9 / 11;
 }
 
 nav a:nth-child(3){
+    grid-column: 12 / 14;
     margin-right: 0;
 }
 
 .logo{
-    width: 160px;
+    width: 140px;
     height: 200px;
-    margin-left: 5px;
+    margin-right: 10px;
+}
+
+.footer-image{
+    display: block;
+    width: 100%;
+}
+
+.endereco{
+    width: 1196px;
+    margin-top: 400px;
+}
+
+.rodape{
+    background-color: var(--detalhe-vermelho-1);
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.seletor-temas{
+    margin-right: 17px;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.seletor-escuro{
+    display: none;
+}
+
+.logo-rodape{
+    margin-left: 65px;
+    width: 150px;
+    height: 200px;
+}
+
+iframe{
+    margin-left: 83px;
+}
+
+.texto-footer{
+    margin-left: 83px;
 }
