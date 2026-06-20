@@ -72,20 +72,10 @@ nav a:nth-child(3){
     margin-right: 10px;
 }
 
-.footer-image{
-    display: block;
-    width: 100%;
-}
 
 .endereco{
     width: 1196px;
-    margin-top: 400px;
-}
-
-.rodape{
-    background-color: var(--detalhe-vermelho-1);
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    margin-top: 250px;
 }
 
 .seletor-temas{
@@ -97,6 +87,17 @@ nav a:nth-child(3){
 
 .seletor-escuro{
     display: none;
+}
+
+.footer-image{
+    display: block;
+    width: 100%;
+}
+
+.rodape{
+    background-color: var(--detalhe-vermelho-1);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .rodape{
@@ -193,4 +194,198 @@ nav a:nth-child(3){
     padding: 20px;
 
     font-size: .9rem;
+}
+
+
+section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+
+.hero-section h1 {
+  font-size: 2.5rem;
+  color: #121212; 
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.hero-section p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0 auto 30px auto;
+  color: #36454f;
+}
+
+
+.destaques-section h2 {
+  font-size: 2.2rem;
+  color: #121212; 
+  margin-bottom: 10px;
+}
+
+.destaques-section .subtitulo {
+  font-size: 1.1rem;
+  color: #777;
+  margin-bottom: 40px;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.card-lanche {
+  background-color: #ffffff;
+  padding: 30px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efeito de flutuação ao passar o mouse por cima do card */
+.card-lanche:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.card-lanche h3 {
+  font-size: 1.4rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.card-lanche p {
+  color: #666;
+  line-height: 1.5;
+}
+
+.cta-section {
+  color: #121212;
+}
+
+.cta-section h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.cta-section p {
+  font-size: 1.1rem;
+  margin-bottom: 35px;
+  color: #151a1e;
+}
+
+.btn-primario, .btn-whatsapp {
+  display: inline-block;
+  padding: 15px 35px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-primario {
+  background-color: #f79433;
+  color: #ffffff;
+}
+
+.btn-primario:hover {
+  transform: scale(1.05); /* Faz o botão crescer levemente */
+}
+
+.btn-whatsapp {
+  background-color: #f79433; /* Verde oficial do WhatsApp */
+  color: #ffffff;
+}
+
+.btn-whatsapp:hover {
+  transform: scale(1.05);
+}
+
+.seletor-checkbox {
+  display: none;
+}
+
+.seletor-label {
+  cursor: pointer;
+  display: inline-block;
+}
+
+.seletor-label svg {
+  transition: transform 0.2s ease;
+}
+
+.seletor-label .seletor-escuro {
+  display: none; 
+}
+.seletor-label .seletor-claro {
+  display: block; 
+}
+
+.seletor-checkbox:checked + .seletor-label .seletor-claro {
+  display: none; 
+}
+.seletor-checkbox:checked + .seletor-label .seletor-escuro {
+  display: block; 
+}
+
+body:has(.seletor-checkbox:checked) {
+  background-color: #1e1b15;
+  color: #fafafa;
+}
+
+body:has(.seletor-checkbox:checked) .hero-section {
+  background-color: #1e1b15;
+}
+
+body:has(.seletor-checkbox:checked) .hero-section h1 {
+  color: #fafafa;
+}
+
+body:has(.seletor-checkbox:checked) .hero-section p {
+  color: #cccccc;
+}
+
+body:has(.seletor-checkbox:checked) .destaques-section {
+  background-color: #1e1b15;
+}
+
+body:has(.seletor-checkbox:checked) .destaques-section h2 {
+  color: #ffffff;
+}
+
+body:has(.seletor-checkbox:checked) .card-lanche {
+  background-color: #1e1e1e;
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.05);
+}
+
+body:has(.seletor-checkbox:checked) .card-lanche h3 {
+  color: #ffffff;
+}
+
+body:has(.seletor-checkbox:checked) .card-lanche p {
+  color: #b3b3b3;
+}
+
+body:has(.seletor-checkbox:checked) .cta-section h2{
+    color: #fafafa;
+}
+
+body:has(.seletor-checkbox:checked) .cta-section p{
+    color: #f0f0f0;
+}
+
+body:has(.seletor-checkbox:checked) header{
+    background-color: #1e1b15;
+    border-bottom: 15px solid #a90e13;
+}
+
+body:has(.seletor-checkbox:checked) header a{
+    color: #cccccc;
 }

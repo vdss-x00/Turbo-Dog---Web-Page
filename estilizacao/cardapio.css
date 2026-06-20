@@ -2,6 +2,7 @@
 body{
     background-color: #fffa96;
     font-family:Arial, Helvetica, sans-serif;
+    margin: 0;
 }
 
 main{
@@ -117,4 +118,184 @@ h1{
 
 table {
     width: 100%;
+}
+
+.footer-image{
+    display: block;
+    width: 100%;
+}
+
+.rodape{
+    background-color: var(--detalhe-vermelho-1);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.rodape{
+    background: linear-gradient(
+        180deg,
+        #a90e13,
+        #7d0b0f
+    );
+
+    color: white;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 50px;
+
+    padding: 60px 80px;
+}
+
+.coluna-rodape{
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-rodape{
+    width: 140px;
+    margin-bottom: 20px;
+}
+
+.slogan{
+    line-height: 1.7;
+    max-width: 250px;
+    opacity: .9;
+}
+
+.coluna-rodape h3{
+    margin-bottom: 20px;
+
+    font-size: 1.4rem;
+
+    color: #fffa96;
+
+    position: relative;
+}
+
+.coluna-rodape h3::after{
+    content: "";
+
+    display: block;
+
+    width: 60px;
+    height: 4px;
+
+    margin-top: 8px;
+
+    background-color: #fffa96;
+}
+
+.item-contato{
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+
+    margin-bottom: 20px;
+
+    cursor: pointer;
+
+    transition: .3s;
+}
+
+.item-contato:hover{
+    transform: translateX(5px);
+}
+
+.coluna-rodape iframe{
+    width: 100%;
+    max-width: 320px;
+
+    height: 200px;
+
+    border-radius: 15px;
+
+    margin-top: 15px;
+}
+
+.copyright{
+    background-color: #65070a;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 20px;
+
+    font-size: .9rem;
+}
+
+.seletor-checkbox {
+  display: none;
+}
+
+/* Estiliza o label para se comportar como um botão clicável */
+.seletor-label {
+  cursor: pointer;
+  display: inline-block;
+}
+
+.seletor-label svg {
+  transition: transform 0.2s ease;
+}
+
+.seletor-label .seletor-escuro {
+  display: none; 
+}
+.seletor-label .seletor-claro {
+  display: block; 
+}
+
+.seletor-checkbox:checked + .seletor-label .seletor-claro {
+  display: none; 
+}
+.seletor-checkbox:checked + .seletor-label .seletor-escuro {
+  display: block; 
+}
+
+
+body:has(.seletor-checkbox:checked) {
+  background-color: #1e1b15;
+  color: #fafafa;
+}
+
+/* Alterando os elementos específicos da landing page para o modo escuro */
+body:has(.seletor-checkbox:checked) .hero-section {
+  background-color: #1e1e1e;
+}
+
+body:has(.seletor-checkbox:checked) .hero-section p {
+  color: #cccccc;
+}
+
+body:has(.seletor-checkbox:checked) .destaques-section {
+  background-color: #1e1b15;
+}
+
+body:has(.seletor-checkbox:checked) .destaques-section h2 {
+  color: #ffffff;
+}
+
+body:has(.seletor-checkbox:checked) .card-lanche {
+  background-color: #1e1e1e;
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.05);
+}
+
+body:has(.seletor-checkbox:checked) .card-lanche h3 {
+  color: #ffffff;
+}
+
+body:has(.seletor-checkbox:checked) .card-lanche p {
+  color: #b3b3b3;
+}
+
+body:has(.seletor-checkbox:checked) header{
+    background-color: #1e1b15;
+    border-bottom: 15px solid #a90e13;
+}
+
+body:has(.seletor-checkbox:checked) header a{
+    color: #cccccc;
 }
