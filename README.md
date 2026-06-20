@@ -10,7 +10,38 @@
 - [Vitor de Souza Santos](https://github.com/vdss-x00)
 
 ## Objetivo
+
+Essa página web foi feita como parte da avaliação final da disciplina de Desenvolvimento Front-End, do curso de Engenharia de Software do UniSenai PR.
+
+Tem como objetivo implementar todos os conceitos aprendidos em sala pelos alunos em HTML, CSS e Javascript em uma única página web que simula uma aplicação da vida real.
+
+No nosso caso, escolhemos a Turbo Dog, uma tenda de cachorro-quente de Curitiba.
+
 ## Tecnologias Utilizadas
-## Estrutura das Páginas e Seções
+- HTML
+- CSS
+- Javascript
+
+Todas as tecnologias usadas foram utilizaas em suas versões normais, também conhecidas como `vanilla`.
+
+## Estrutura das Páginas
+
+>Todas as páginas possuem o mesmo layout de Cabeçalho -> Conteúdo -> Rodapé. O que difere em cada uma é seu conteúdo.
+
+#### index.html
+
+
+#### sobre.html
+
+
+#### cardapio.html
+
+
+#### contato.html
+
+
 ## Funcionalidades Implementadas
+- Seletor de temas Claro-Escuro (em formato de lâmpada)
+- Manipulação do DOM e tratamento de eventos com JS (validação de campos do formulário de contato)
+
 ## Link GitPages
