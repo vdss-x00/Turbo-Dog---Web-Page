@@ -28,17 +28,17 @@ Todas as tecnologias usadas foram utilizadas em suas versões normais, também c
 
 >Todas as páginas possuem o mesmo layout de Cabeçalho -> Conteúdo -> Rodapé. O que difere em cada uma é seu conteúdo.
 
-#### index.html
+### index.html
 A página inicial.
 
 O primeiro elemento que aparece é um banner com informações sobre a Turbo Dog (horário de funcionamento, localização, e entre outros.)
 
 Em seguida, a `Hero Section`, com vários CTAs que levam para diferentes partes do site e informações adicionais sobre alguns dos itens mais pedidos.
 
-#### sobre.html
+### sobre.html
 Página que detalha a história da Turbo Dog e detalhes adicionais sobre seus produtos, tanto por meio de texto estruturado em formato de artigo como por cards complementares.
 
-#### cardapio.html
+### cardapio.html
 Página que detalha os itens disponíveis que a Turbo Dog oferece.
 
 Organizada com `display: grid`, a página possui quatro tabelas ao todo, com a primeira contendo informações sobre os cachorros quentes disponíveis, seus ingredientes e preços.
@@ -49,7 +49,7 @@ Ao fim da página, há um bloco contendo curiosidades sobre a origem do nome `Vi
 
 >Observação: Mesmo depois de muito tentar, não foi possível alinhar perfeitamente as três outras tabelas com a tabela maior. 
 
-#### contato.html
+### contato.html
 Página que contém um card que simula um formulário de contato, com campos para nome, email, uma mensagem e um botão de enviar.
 
 Aqui é onde a implementação de JS do projeto é feita, para validar se o usuário inseriu de fato alguma informação nos campos, se o campo de email possui um `@`, e também para mostrar uma mensagem de sucesso após o envio.
@@ -57,6 +57,8 @@ Aqui é onde a implementação de JS do projeto é feita, para validar se o usu�
 ## Funcionalidades Implementadas
 - Seletor de temas Claro-Escuro (em formato de lâmpada)
 - Manipulação do DOM e tratamento de eventos com JS (validação de campos do formulário de contato)
+
+>Uma funcionalidade que não pode ser implementada, por falta de tempo, foi a responsividade do projeto.
 
 ## Link GitPages
 https://vdss-x00.github.io/Turbo-Dog---Web-Page/
